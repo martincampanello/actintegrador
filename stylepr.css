@@ -1,20 +1,36 @@
-.planes, .container {
+.hh1, .container {
     width: 80%;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
-
+.h1{
+    max-width:50% ;
+    margin-top: 100px;
+    background-color: #ec4335;
+    border-color: #000000;
+    padding: 5px;
+}
+.planesi{
+    display: flex;
+    justify-content: space-between;
+}
 .plan {
-    width: 30%;
-    background-color: #fff;
+    width: 23%;
+    max-width: 25%;
+    height: 100%;
+    max-height: 110%;
+    background-color: #a24747;
     margin: 20px 0;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:justify;
 }
 
-.plan h2 {
-    margin-top: 0;
+/* .plan h2 {
+    margin-top: 
     font-size: 20px;
     color: #333;
 }
@@ -36,16 +52,17 @@
 }
 
 .plan .features li {
-    background: url('./logo.png');
+    background: url('./logop.png');
     padding-left: 25px;
     margin: 10px 0;
     color: #333;
 }
-
+ */
 
 .log-in {
     width: 100px;
     height: 50px;
+    min-width: 80px;
     background-color: #000000;
     color:#ec4335 ;
     font-size: 14px;
