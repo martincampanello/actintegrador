@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginMC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=McLaren&display=swap">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+  <header>
+    <a href="https://www.campanello.telecentro.com.ar">
+      <img src="./logo.png" alt="logo" class="logo"> 
+      </a>
+      <div class="clock">
+        <div id="time"></div>
+        <div id="fecha"></div>
+        </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar...">
+    <button class= "bus-car" onclick="window.location.href='https://www.google.com/'">buscar</button>
+  </div>
+    <button class="pag-prin" onclick="location.href='index.html'">pagina principal</button>
+    </header>
+    <form id="login" >
+        <h3>inicio</h3>
+         <label for="username">nombre de usuario</label> 
+          <input type="text" placeholder="correo electronico" id="username" name="username" required> 
+          <label for="password">contraseña</label>  
+          <input type="password" placeholder="contraseña" id="password" name="password" required>  
+          <button type="submit"> iniciar sesion </button>
+          <div class="social">
+            <div class="go"><a href="https://accounts.google.com/">
+              <i class="fab fa-google"></a></i> Google</div>
+            <div class="fb"><a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></a></i> Facebook</div>
+          </div>
+    </form>
+    <footer>
+      <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+      <p> <a href="https://www.campanello.telecentro.com.ar" class="link">CAMPANELLO.TELECENTRO.COM.AR</a> </p>
+      <nav>
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </nav>
+    </footer>
+</body>
+</html>---__+

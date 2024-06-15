@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'mclaren';
+}
+body{
+    background-color: #2d2c30;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.logo {
+    width: 250px;
+    height: auto;
+    flex-grow: 1;
+}
+.clock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; 
+    height: 60px; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    background-color: #1b1313; 
+    color: #ea1b1b; 
+    margin: 20px auto; 
+    flex-direction: column;
+    text-transform: uppercase;
+   /* width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border: 2px solid #701919;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+#time {
+    text-align: center;
+    font-size: 20px;
+}
+#fecha{
+    text-align: center;
+    font-size: 10px;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center; 
+    background-color: #333; 
+     padding: 10px 20px; 
+     position: fixed;
+     width: 100%;
+     box-sizing: border-box;
+    
+}
+header button {
+    margin-right: 05px; 
+    padding: 10px 15px; 
+    width: 100px;
+    height: 50px;
+    background-color: #000000;
+    color:#eb4335 ;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 500px;
+    }
+.search-box input{
+       height: 50px;
+        width: 200px;
+       flex-grow: 1;
+        background-color: rgba(255, 255,255,0.07);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 300px;
+        text-transform: uppercase;
+    }
