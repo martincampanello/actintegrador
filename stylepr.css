@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .h1{
-    max-width:50% ;
+    max-width:60% ;
     margin-top: 100px;
     background-color: #ec4335;
     border-color: #000000;
@@ -14,51 +14,33 @@
 }
 .planesi{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /*flex-flow: nowrap;*/
+    align-items: center;
+    text-align: center;
 }
 .plan {
     width: 23%;
     max-width: 25%;
-    height: 100%;
-    max-height: 110%;
+    height: 20%;
+    max-height: 25%;
     background-color: #a24747;
-    margin: 20px 0;
+    margin: 20px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align:justify;
 }
-
-/* .plan h2 {
-    margin-top: 
+ .plan h2 {
     font-size: 20px;
-    color: #333;
 }
-
-.plan p {
-    font-size: 14px;
-    color: #666;
-}
-
 .plan .price {
-    font-size: 13px;
+    max-width: 65%;/**//**//**/
+    font-size: 18px;
     font-weight: bold;
-    color: #e53935;
+    color:#eb4335;
+    background-color:#000000;
 }
-
-.plan .features {
-    list-style: none;
-    padding: 0;
-}
-
-.plan .features li {
-    background: url('./logop.png');
-    padding-left: 25px;
-    margin: 10px 0;
-    color: #333;
-}
- */
-
 .log-in {
     width: 100px;
     height: 50px;
@@ -67,7 +49,57 @@
     color:#ec4335 ;
     font-size: 14px;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
 
 }
+.sol{
+    width: 30%;
+    height: 35%;
+    min-width: 80px;
+    background-color: #000000;
+    color:#ec4335 ;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.5); 
+        }
+
+        .modal-content {
+            background-color: #ec4335;
+            margin: 15% auto; 
+            border: 1px solid #0f0f0f;
+            border-width: 5px;
+            width: 70%; 
+            max-width: 600px; 
+            height: 33%;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .close {
+            color: #453ea1;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">  
     <link rel="stylesheet" href="stylepr.css"> 
+    <link rel="stylesheet" href="carrusel.css">
     <script src="script.js" defer></script>
     <title>pageprincipal</title>
 </head>
@@ -28,32 +29,49 @@
     </header>
     <div class="container" id="hh1">
 
-       <h1 class="h1">Internet de alta velocidad</h1>
+       <h1 class="h1">Internet fibra de alta velocidad</h1>
 
-      <div class="planesi" > <article class="plan">
+      <div class="planesi" > 
+        <article class="plan">
             <h2>Plan Básico</h2>
-            <p class="price">$19.99/mes</p>
+            <p class="price">$10.000/mes</p>
             <ul class="features">
                 <li>300 Mbps de velocidad</li>
+                <li>linea fija</li>
             </ul>
+            <img  id="logo" src="./logop.webp" width="40%" >
+            <button class="sol" onclick="solicitarPlan('Plan Basico')">solicitar internet</button>
+
         </article>
 
         <article class="plan">
             <h2>Plan Avanzado</h2>
-            <p class="price">$39.99/mes</p>
+            <p class="price">$15.000/mes</p>
             <ul class="features">
                 <li>500 Mbps de velocidad</li>
-
+                <li> linea fija</li>
             </ul>
+            <img  id="logop" src="./logop.webp" width="35%" >
+            <button class="sol" onclick="solicitarPlan('Plan Avanzado')">solicitar internet</button>
         </article>
 
         <article class="plan">
             <h2>Plan Premium</h2>
-            <p class="price">$59.99/mes</p>
+            <p class="price">$20.000/mes</p>
             <ul class="features">
                 <li>700 Mbps de velocidad</li>
+                <li>linea fija</li>
             </ul>
+            <img  id="logo" src="./logop.webp" width="40%" >
+            <button class="sol" onclick="solicitarPlan('Plan Premium')">solicitar internet</button>
         </article> </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modalText"></p>
+                <p>comunicate al siguiente numero para concretar la instalacion </p>
+                <p> 264 1234567</p>
+            </div>
     </div>
     <footer>
         <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>

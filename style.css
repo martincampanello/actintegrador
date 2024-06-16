@@ -6,13 +6,13 @@
     background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top:50%;
+    top: 50%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255,255, 0.1);
     box-shadow:0 0 40px rgba(8,7, 16, 0.6) ;
-    padding: 30px 30px;
+    padding: 30px ;
     font-family: 'mclaren','mclaren';
     color: #eb4335;
     letter-spacing: 0.5px;
@@ -42,12 +42,18 @@ font-weight: 500px;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
+    
 }
-::placeholder{
+/*input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,input:-webkit-autofill:active {
+ color: #eb4335;
+}*/
+
+::placeholder {
     color: #828282
 }
 .login,button{
-   /* margin-top: 10px;*/
    height: 45px;
     width: 50%;
     display: flex;
@@ -91,9 +97,31 @@ font-weight: 500px;
     width: 100px;
     height: 50px;
     background-color: #000000;
-    color:#ec4335 ;
+    color:#eb4335 ;
     font-size: 14px;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
+}
+.strength {
+    height: 5px;
+    width: 95%;
+    max-width: 100%;
+    background-color: rgba(211, 211, 211, 0);
+    margin-top: 5px;
+}
+.strength-indicator {
+    height: 100%;
+    max-width: 110%;
+    width: 0;
+    transition: width 0.3s;
+}
+.strength-weak {
+    background-color: red;
+}
+.strength-medium {
+    background-color: yellow;
+}
+.strength-strong {
+    background-color: green;
 }
