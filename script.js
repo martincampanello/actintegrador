@@ -38,16 +38,19 @@ document.getElementById('password').addEventListener('input', function() {
         strengthIndicator.className = 'strength-indicator strength-medium';
     } else if (strength.level === 'strong') {
         strengthIndicator.className = 'strength-indicator strength-strong';
+    } else if (strength.level === 'extra-strong') {
+        strengthIndicator.className = 'strength-indicator strength-extra-strong';
     } else {
         strengthIndicator.className = 'strength-indicator';
     }
 });
 
+
 function calculateStrength(password) {
     let score = 0;
 
     if (password.length >= 6) score += 1;
-    if (/[A-Z]/.test(password)) score += 2;
+    if (/[A-Z]/.test(password)) score += 1;
     if (/[a-z]/.test(password)) score += 1;
     if (/[0-9]/.test(password)) score += 1;
     if (/[^A-Za-z0-9]/.test(password)) score += 1;
@@ -56,15 +59,19 @@ function calculateStrength(password) {
     let percent = (score / 5) * 100;
     let level;
 
-    if (score <= 1) {
+    if (score <= 2) {
         level = 'weak';
-    } else if (score <= 3) {
+    } else if (score <= 4) {
         level = 'medium';
-    } else {
+    } else if (score<=5) {
         level = 'strong';
+    } else if (score>=6){
+        level= 'extra-strong';
     }
     return { percent, level };
 }
+
+
 
 
 function solicitarPlan(plan) {

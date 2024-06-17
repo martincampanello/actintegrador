@@ -109,7 +109,7 @@ font-weight: 500px;
     width: 95%;
     max-width: 100%;
     background-color: rgba(211, 211, 211, 0);
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .strength-indicator {
     height: 100%;
@@ -125,4 +125,7 @@ font-weight: 500px;
 }
 .strength-strong {
     background-color: green;
+}
+.strength-extra-strong{
+    background-color: rgb(6, 61, 6);
 }
