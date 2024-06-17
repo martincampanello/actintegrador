@@ -20,6 +20,9 @@ function padZero (number){
 }
 updateClock();
 
+
+
+
 document.getElementById('password').addEventListener('input', function() {
     const password = this.value;
     const strengthIndicator = document.getElementById('strength-indicator');
@@ -62,6 +65,8 @@ function calculateStrength(password) {
     }
     return { percent, level };
 }
+
+
 function solicitarPlan(plan) {
     document.getElementById('modalText').innerText = 'gracias por solicitar el  ' + plan;
     document.getElementById('myModal').style.display = 'block';
